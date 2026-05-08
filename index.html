@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf6ee">
+<title>Bona Lingua — Logopädie in Hannover · 7 Praxen</title>
+<meta name="description" content="Bona Lingua. Sieben Logopädie-Praxen in Hannover und Region. Kindertherapie, Stimme, Sprache, Schlucken — herzlich, fundiert, alltagsnah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ef9d32'/%3E%3Cpath d='M16 38c4-2 8-2 12 0s8 2 12 0' stroke='%23fbf6ee' stroke-width='3.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='42' cy='22' r='3' fill='%23fbf6ee'/%3E%3C/svg%3E">
+
+<style>
+:root{
+  --cream:#fbf6ee;
+  --cream-2:#f3ead9;
+  --paper:#fffdf8;
+  --ink:#221608;
+  --ink-2:#5a4836;
+  --ink-3:#8a7763;
+  --orange:#ef9d32;
+  --orange-deep:#b35c00;
+  --orange-soft:#fbe2bd;
+  --teal:#1f3d3d;
+  --rose:#d97354;
+  --line:rgba(34,22,8,0.12);
+  --line-strong:rgba(34,22,8,0.28);
+  --shadow:0 30px 60px -30px rgba(34,22,8,0.25);
+  --display:'Fraunces', 'Times New Roman', serif;
+  --sans:'Manrope', system-ui, sans-serif;
+  --max:1320px;
+}
+
+*{box-sizing:border-box}
+*::selection{background:var(--ink); color:var(--cream)}
+
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:var(--sans);
+  font-weight:400;
+  font-size:17px;
+  line-height:1.55;
+  color:var(--ink);
+  background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+
+img,svg{display:block; max-width:100%}
+a{color:inherit; text-decoration:none}
+button{font-family:inherit; cursor:pointer; border:0; background:none; color:inherit}
+
+/* ───────── Grain overlay ───────── */
+body::before{
+  content:"";
+  position:fixed; inset:0; pointer-events:none; z-index:200; opacity:.04;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  mix-blend-mode:multiply;
+}
+
+/* ───────── Top ribbon ───────── */
+.ribbon{
+  position:relative; z-index:5;
+  background:var(--ink); color:var(--cream);
+  font-size:13px; letter-spacing:.04em;
+}
+.ribbon-inner{
+  max-width:var(--max); margin:0 auto;
+  padding:10px 28px;
+  display:flex; gap:28px; align-items:center; justify-content:space-between;
+  flex-wrap:wrap;
+}
+.ribbon-inner span{display:inline-flex; align-items:center; gap:8px}
+.ribbon-inner .dot{width:6px; height:6px; border-radius:50%; background:var(--orange); display:inline-block}
+.ribbon a{border-bottom:1px solid rgba(255,255,255,.25); padding-bottom:1px; transition:border-color .3s}
+.ribbon a:hover{border-color:var(--orange)}
+
+/* ───────── Header ───────── */
+header.site{
+  position:sticky; top:0; z-index:50;
+  background:rgba(251,246,238,.85);
+  backdrop-filter:blur(18px) saturate(1.2);
+  -webkit-backdrop-filter:blur(18px) saturate(1.2);
+  border-bottom:1px solid var(--line);
+}
+.site-inner{
+  max-width:var(--max); margin:0 auto;
+  padding:18px 28px;
+  display:flex; align-items:center; justify-content:space-between; gap:32px;
+}
+.brand{display:flex; align-items:center; gap:14px; text-decoration:none}
+.brand-mark{
+  width:44px; height:44px; border-radius:12px;
+  background:var(--orange);
+  display:grid; place-items:center;
+  position:relative;
+  box-shadow:0 6px 16px -8px rgba(239,157,50,.7);
+}
+.brand-mark svg{width:28px; height:28px}
+.brand-text{display:flex; flex-direction:column; line-height:1}
+.brand-text .a{
+  font-family:var(--display);
+  font-style:italic;
+  font-weight:500;
+  font-size:24px;
+  font-variation-settings:"opsz" 144, "SOFT" 80;
+  letter-spacing:-0.01em;
+  color:var(--ink);
+}
+.brand-text .b{
+  font-family:var(--sans);
+  font-size:11px; font-weight:500; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--ink-2);
+  margin-top:4px;
+}
+nav.primary{display:flex; gap:32px; align-items:center}
+nav.primary a{
+  font-size:14px; font-weight:500;
+  color:var(--ink-2);
+  transition:color .25s;
+  position:relative;
+}
+nav.primary a:hover{color:var(--ink)}
+nav.primary a::after{
+  content:""; position:absolute; left:0; right:0; bottom:-6px;
+  height:1px; background:var(--orange); transform:scaleX(0);
+  transform-origin:left; transition:transform .35s ease;
+}
+nav.primary a:hover::after{transform:scaleX(1)}
+.cta-pill{
+  font-size:14px; font-weight:600;
+  padding:10px 18px;
+  background:var(--ink); color:var(--cream);
+  border-radius:999px;
+  display:inline-flex; align-items:center; gap:8px;
+  transition:transform .25s, background .25s;
+}
+.cta-pill:hover{background:var(--orange-deep); transform:translateY(-1px)}
+.cta-pill svg{width:14px; height:14px}
+
+.menu-toggle{display:none}
+
+/* ───────── Hero ───────── */
+.hero{
+  position:relative;
+  padding:80px 28px 60px;
+  max-width:var(--max); margin:0 auto;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:60px;
+  align-items:end;
+}
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:12px; font-weight:600; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--orange-deep);
+  margin-bottom:36px;
+}
+.eyebrow::before{
+  content:""; width:32px; height:1px; background:var(--orange-deep);
+}
+h1.hero-title{
+  font-family:var(--display);
+  font-weight:300;
+  font-size:clamp(48px, 8vw, 124px);
+  line-height:.92;
+  letter-spacing:-0.035em;
+  margin:0 0 36px;
+  color:var(--ink);
+  font-variation-settings:"opsz" 144, "SOFT" 30;
+}
+h1.hero-title em{
+  font-style:italic;
+  font-weight:300;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+  color:var(--orange-deep);
+  display:inline-block;
+}
+h1.hero-title .underline{
+  position:relative; display:inline-block;
+}
+h1.hero-title .underline::after{
+  content:""; position:absolute; left:-2%; right:-2%; bottom:8%;
+  height:.18em; background:var(--orange); opacity:.35; z-index:-1;
+  border-radius:99px;
+}
+.lede{
+  font-size:clamp(17px,1.4vw,21px);
+  line-height:1.55;
+  color:var(--ink-2);
+  max-width:520px;
+  margin:0 0 40px;
+  font-weight:400;
+}
+.hero-actions{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding:18px 28px;
+  border-radius:999px;
+  font-size:15px; font-weight:600;
+  transition:all .3s ease;
+  letter-spacing:.01em;
+}
+.btn-primary{
+  background:var(--ink); color:var(--cream);
+}
+.btn-primary:hover{
+  background:var(--orange-deep);
+  transform:translateY(-2px);
+  box-shadow:0 14px 30px -10px rgba(179,92,0,.4);
+}
+.btn-ghost{
+  background:transparent; color:var(--ink);
+  border:1px solid var(--line-strong);
+}
+.btn-ghost:hover{border-color:var(--ink); background:var(--paper)}
+.btn svg{width:14px; height:14px}
+
+/* Hero right column - editorial card stack */
+.hero-stage{
+  position:relative;
+  height:560px;
+}
+.hero-card{
+  position:absolute;
+  border-radius:18px;
+  overflow:hidden;
+  background:var(--paper);
+  box-shadow:var(--shadow);
+  border:1px solid rgba(34,22,8,.08);
+}
+.hero-card.c1{
+  top:0; left:0;
+  width:62%; height:75%;
+  transform:rotate(-2.5deg);
+  background:linear-gradient(140deg, #fadda5, #ef9d32 70%, #b35c00);
+}
+.hero-card.c1 .speech{
+  position:absolute; inset:0;
+  display:grid; place-items:center;
+}
+.hero-card.c1 svg{width:60%; opacity:.95}
+
+.hero-card.c2{
+  bottom:30px; right:0;
+  width:55%; height:55%;
+  transform:rotate(2deg);
+  background:var(--paper);
+  padding:32px;
+  display:flex; flex-direction:column; justify-content:space-between;
+}
+.hero-card.c2 .qmark{
+  font-family:var(--display);
+  font-style:italic;
+  font-weight:300;
+  font-size:80px; line-height:.8;
+  color:var(--orange);
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+.hero-card.c2 .quote-text{
+  font-family:var(--display);
+  font-weight:400;
+  font-style:italic;
+  font-size:22px; line-height:1.3;
+  color:var(--ink);
+  font-variation-settings:"opsz" 60, "SOFT" 80;
+  letter-spacing:-.005em;
+}
+.hero-card.c2 .quote-attr{
+  font-size:12px; font-weight:600; letter-spacing:.15em;
+  color:var(--ink-3); text-transform:uppercase;
+}
+
+.hero-card.c3{
+  bottom:0; left:25%;
+  width:200px; padding:18px 22px;
+  border-radius:999px;
+  background:var(--ink); color:var(--cream);
+  display:flex; align-items:center; gap:12px;
+  transform:rotate(-3deg);
+  font-size:13px; font-weight:500;
+}
+.hero-card.c3 .pulse{
+  width:10px; height:10px; border-radius:50%; background:var(--orange);
+  animation:pulse 2s infinite;
+  flex-shrink:0;
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(239,157,50,.6)}
+  50%{box-shadow:0 0 0 8px rgba(239,157,50,0)}
+}
+
+/* Floating numerals */
+.hero-numeral{
+  position:absolute; pointer-events:none;
+  font-family:var(--display); font-style:italic; font-weight:300;
+  font-size:380px; line-height:1;
+  color:var(--orange-soft); opacity:.5;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+  z-index:-1;
+  letter-spacing:-.04em;
+}
+
+/* ───────── Marquee strip ───────── */
+.marquee{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:22px 0;
+  background:var(--cream-2);
+  overflow:hidden;
+  margin-top:60px;
+}
+.marquee-track{
+  display:flex; gap:60px; align-items:center;
+  white-space:nowrap;
+  animation:scroll 38s linear infinite;
+  width:max-content;
+}
+.marquee-item{
+  font-family:var(--display);
+  font-style:italic;
+  font-weight:400;
+  font-size:38px;
+  letter-spacing:-.02em;
+  color:var(--ink);
+  font-variation-settings:"opsz" 144, "SOFT" 80;
+  display:inline-flex; align-items:center; gap:60px;
+}
+.marquee-item::after{
+  content:"✻";
+  color:var(--orange);
+  font-style:normal;
+  font-size:24px;
+}
+@keyframes scroll{
+  to{transform:translateX(-50%)}
+}
+
+/* ───────── Section base ───────── */
+section{padding:120px 28px}
+.container{max-width:var(--max); margin:0 auto}
+
+.section-head{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:60px;
+  margin-bottom:80px;
+  align-items:end;
+}
+.section-head .label{
+  font-size:12px; font-weight:600; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--orange-deep);
+  display:flex; align-items:center; gap:14px;
+}
+.section-head .label::before{
+  content:""; width:26px; height:1px; background:var(--orange-deep);
+}
+.section-head h2{
+  font-family:var(--display); font-weight:300;
+  font-size:clamp(38px, 5vw, 72px);
+  line-height:1; letter-spacing:-.03em;
+  margin:0;
+  font-variation-settings:"opsz" 144, "SOFT" 30;
+}
+.section-head h2 em{
+  font-style:italic; color:var(--orange-deep);
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+
+/* ───────── Therapien (services) ───────── */
+.therapien{
+  background:var(--cream);
+}
+.therapie-grid{
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  gap:28px;
+}
+.therapie-card{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:38px;
+  position:relative;
+  overflow:hidden;
+  transition:transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+  display:flex; flex-direction:column;
+}
+.therapie-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 30px 60px -30px rgba(34,22,8,.18);
+}
+.therapie-card .num{
+  font-family:var(--display); font-style:italic; font-weight:300;
+  font-size:14px; letter-spacing:.1em;
+  color:var(--ink-3);
+  margin-bottom:24px;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+.therapie-card h3{
+  font-family:var(--display); font-weight:400;
+  font-size:34px; line-height:1.05;
+  letter-spacing:-.02em;
+  margin:0 0 16px;
+  color:var(--ink);
+  font-variation-settings:"opsz" 60, "SOFT" 50;
+}
+.therapie-card h3 em{
+  font-style:italic; color:var(--orange-deep);
+  font-variation-settings:"opsz" 60, "SOFT" 100;
+}
+.therapie-card p{
+  font-size:15.5px;
+  line-height:1.55;
+  color:var(--ink-2);
+  margin:0 0 24px;
+}
+.therapie-card .tags{
+  display:flex; flex-wrap:wrap; gap:8px;
+  margin-top:auto;
+}
+.therapie-card .tag{
+  font-size:12px; font-weight:500;
+  padding:6px 12px;
+  background:var(--cream-2);
+  border-radius:999px;
+  color:var(--ink-2);
+  transition:background .25s, color .25s;
+}
+a.tag:hover{
+  background:var(--orange);
+  color:var(--ink);
+}
+.therapie-card .more{
+  margin-top:22px;
+  display:inline-flex; align-items:center; gap:8px;
+  font-size:13px; font-weight:600;
+  letter-spacing:.04em;
+  color:var(--ink);
+  align-self:flex-start;
+  padding-bottom:3px;
+  border-bottom:1px solid var(--line-strong);
+  transition:color .25s, border-color .25s, gap .25s;
+}
+.therapie-card .more:hover{
+  color:var(--orange-deep);
+  border-color:var(--orange-deep);
+  gap:14px;
+}
+.therapie-card .more svg{width:11px; height:11px}
+.therapie-card.feature .more{
+  color:var(--orange);
+  border-color:rgba(239,157,50,.35);
+}
+.therapie-card.feature .more:hover{
+  color:var(--cream);
+  border-color:var(--cream);
+}
+.therapie-card.feature a.tag:hover{
+  background:var(--orange); color:var(--ink);
+}
+.therapie-card .icon-wrap{
+  position:absolute; top:32px; right:32px;
+  width:48px; height:48px;
+  border-radius:12px;
+  background:var(--orange-soft);
+  display:grid; place-items:center;
+  color:var(--orange-deep);
+}
+.therapie-card .icon-wrap svg{width:24px; height:24px; stroke-width:1.5}
+
+.therapie-card.span6{grid-column:span 6}
+.therapie-card.span4{grid-column:span 4}
+.therapie-card.span8{grid-column:span 8}
+.therapie-card.span12{grid-column:span 12}
+
+.therapie-card.feature{
+  background:linear-gradient(140deg, var(--ink) 0%, #3d2814 100%);
+  color:var(--cream);
+}
+.therapie-card.feature h3{color:var(--cream)}
+.therapie-card.feature h3 em{color:var(--orange)}
+.therapie-card.feature p{color:rgba(251,246,238,.75)}
+.therapie-card.feature .num{color:rgba(251,246,238,.5)}
+.therapie-card.feature .tag{
+  background:rgba(255,255,255,.08); color:var(--cream);
+}
+.therapie-card.feature .icon-wrap{
+  background:rgba(239,157,50,.18); color:var(--orange);
+}
+
+/* ───────── Praxen / Locations ───────── */
+.praxen{
+  background:var(--cream-2);
+  position:relative;
+  overflow:hidden;
+}
+.praxen::before{
+  content:"VII"; position:absolute;
+  font-family:var(--display); font-style:italic; font-weight:300;
+  font-size:520px; line-height:1;
+  color:var(--orange);
+  opacity:.06;
+  top:-40px; right:-30px;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+  pointer-events:none;
+}
+.praxen-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+}
+.praxis{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:32px;
+  display:flex; flex-direction:column;
+  position:relative;
+  transition:transform .35s, border-color .35s;
+}
+.praxis:hover{
+  transform:translateY(-4px);
+  border-color:var(--orange);
+}
+.praxis-num{
+  position:absolute; top:24px; right:28px;
+  font-family:var(--display); font-style:italic; font-weight:300;
+  font-size:42px; line-height:1;
+  color:var(--orange);
+  opacity:.55;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+.praxis h3{
+  font-family:var(--display); font-weight:400;
+  font-size:28px; line-height:1.05;
+  letter-spacing:-.02em;
+  margin:0 0 6px;
+  color:var(--ink);
+  font-variation-settings:"opsz" 60, "SOFT" 60;
+}
+.praxis .city{
+  font-size:12px; font-weight:600; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--ink-3);
+  margin-bottom:24px;
+}
+.praxis .addr{
+  font-size:15px; line-height:1.5;
+  color:var(--ink-2);
+  margin-bottom:24px;
+  flex:1;
+}
+.praxis .addr strong{color:var(--ink); font-weight:600}
+.praxis .links{
+  display:flex; gap:8px; flex-wrap:wrap;
+  border-top:1px solid var(--line);
+  padding-top:20px;
+  margin-top:auto;
+}
+.praxis .lnk{
+  font-size:13px; font-weight:500;
+  padding:8px 14px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--ink-2);
+  display:inline-flex; align-items:center; gap:6px;
+  transition:all .25s;
+}
+.praxis .lnk:hover{
+  border-color:var(--ink); background:var(--ink); color:var(--cream);
+}
+.praxis .lnk.primary{
+  background:var(--orange); border-color:var(--orange); color:var(--ink);
+}
+.praxis .lnk.primary:hover{background:var(--orange-deep); border-color:var(--orange-deep); color:var(--cream)}
+.praxis .lnk svg{width:11px; height:11px}
+
+/* ───────── Manifest / Philosophy ───────── */
+.manifest{
+  background:var(--ink);
+  color:var(--cream);
+  position:relative;
+  overflow:hidden;
+}
+.manifest::before{
+  content:"";
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse at 80% 20%, rgba(239,157,50,.15) 0%, transparent 50%);
+  pointer-events:none;
+}
+.manifest-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  position:relative;
+  align-items:start;
+}
+.manifest .label{color:var(--orange)}
+.manifest .label::before{background:var(--orange)}
+.manifest h2{
+  font-family:var(--display); font-weight:300;
+  font-size:clamp(40px, 5.5vw, 84px);
+  line-height:1; letter-spacing:-.03em;
+  margin:0 0 40px;
+  color:var(--cream);
+  font-variation-settings:"opsz" 144, "SOFT" 30;
+}
+.manifest h2 em{
+  font-style:italic;
+  color:var(--orange);
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+.manifest p.body{
+  font-size:18px; line-height:1.6;
+  color:rgba(251,246,238,.78);
+  margin:0 0 24px;
+  max-width:480px;
+}
+.values{
+  display:flex; flex-direction:column;
+  gap:0;
+  border-top:1px solid rgba(251,246,238,.1);
+}
+.value{
+  display:grid;
+  grid-template-columns:80px 1fr;
+  gap:24px;
+  padding:32px 0;
+  border-bottom:1px solid rgba(251,246,238,.1);
+  align-items:start;
+}
+.value-num{
+  font-family:var(--display); font-style:italic; font-weight:300;
+  font-size:48px; line-height:1;
+  color:var(--orange);
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+.value-content h4{
+  font-family:var(--display); font-weight:400;
+  font-size:24px; line-height:1.2;
+  margin:0 0 10px;
+  color:var(--cream);
+  font-variation-settings:"opsz" 60, "SOFT" 60;
+}
+.value-content p{
+  font-size:15px; line-height:1.55;
+  color:rgba(251,246,238,.65);
+  margin:0;
+}
+
+/* ───────── Stats strip ───────── */
+.stats{
+  background:var(--orange);
+  color:var(--ink);
+  padding:80px 28px;
+}
+.stats-grid{
+  max-width:var(--max); margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+}
+.stat{
+  border-left:1px solid rgba(34,22,8,.18);
+  padding-left:24px;
+}
+.stat:first-child{border-left:0; padding-left:0}
+.stat .n{
+  font-family:var(--display); font-weight:300;
+  font-size:clamp(50px, 6vw, 86px);
+  line-height:.95;
+  letter-spacing:-.04em;
+  color:var(--ink);
+  font-variation-settings:"opsz" 144, "SOFT" 30;
+}
+.stat .n em{
+  font-style:italic;
+  color:var(--orange-deep);
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+.stat .l{
+  margin-top:14px;
+  font-size:13px; font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(34,22,8,.7);
+  max-width:200px;
+}
+
+/* ───────── CTA ───────── */
+.cta{
+  padding:140px 28px;
+  background:var(--cream);
+}
+.cta-card{
+  max-width:var(--max); margin:0 auto;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:32px;
+  padding:80px;
+  position:relative;
+  overflow:hidden;
+}
+.cta-card::before{
+  content:"";
+  position:absolute; right:-100px; bottom:-150px;
+  width:500px; height:500px;
+  background:radial-gradient(circle, var(--orange-soft), transparent 70%);
+  pointer-events:none;
+}
+.cta-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:60px;
+  align-items:end;
+  position:relative;
+}
+.cta h2{
+  font-family:var(--display); font-weight:300;
+  font-size:clamp(40px, 5vw, 78px);
+  line-height:.95; letter-spacing:-.03em;
+  margin:0 0 24px;
+  color:var(--ink);
+  font-variation-settings:"opsz" 144, "SOFT" 30;
+}
+.cta h2 em{
+  font-style:italic;
+  color:var(--orange-deep);
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+}
+.cta p{
+  font-size:18px; line-height:1.55;
+  color:var(--ink-2);
+  margin:0 0 36px;
+  max-width:520px;
+}
+.cta-contact{
+  display:flex; flex-direction:column; gap:18px;
+}
+.contact-item{
+  display:flex; align-items:center; gap:16px;
+  padding:20px 24px;
+  background:var(--cream);
+  border-radius:16px;
+  border:1px solid var(--line);
+  transition:all .3s;
+}
+.contact-item:hover{
+  border-color:var(--ink);
+  transform:translateY(-2px);
+}
+.contact-item .ic{
+  width:42px; height:42px; border-radius:12px;
+  background:var(--ink); color:var(--cream);
+  display:grid; place-items:center;
+  flex-shrink:0;
+}
+.contact-item .ic svg{width:18px; height:18px}
+.contact-item .meta{
+  font-size:11px; font-weight:600;
+  letter-spacing:.15em; text-transform:uppercase;
+  color:var(--ink-3);
+}
+.contact-item .val{
+  font-family:var(--display); font-weight:400;
+  font-size:20px; color:var(--ink);
+  font-variation-settings:"opsz" 60, "SOFT" 50;
+}
+
+/* ───────── Footer ───────── */
+footer{
+  background:var(--ink); color:var(--cream);
+  padding:80px 28px 40px;
+}
+.foot-inner{
+  max-width:var(--max); margin:0 auto;
+}
+.foot-top{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:60px;
+  padding-bottom:60px;
+  border-bottom:1px solid rgba(251,246,238,.12);
+}
+.foot-brand .brand-mark{margin-bottom:24px}
+.foot-brand p{
+  font-size:14px; line-height:1.6;
+  color:rgba(251,246,238,.6);
+  max-width:340px;
+  margin:0;
+}
+.foot-col h5{
+  font-size:11px; font-weight:600;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--orange);
+  margin:0 0 18px;
+}
+.foot-col ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px}
+.foot-col a{
+  font-size:14px; color:rgba(251,246,238,.7);
+  transition:color .25s;
+}
+.foot-col a:hover{color:var(--orange)}
+.foot-bottom{
+  padding-top:32px;
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; gap:20px;
+}
+.foot-bottom .copy{
+  font-size:13px; color:rgba(251,246,238,.5);
+}
+.foot-bottom .legal{
+  display:flex; gap:24px;
+  font-size:13px;
+}
+.foot-bottom .legal a{color:rgba(251,246,238,.6)}
+.foot-bottom .legal a:hover{color:var(--orange)}
+
+.wordmark-bottom{
+  font-family:var(--display); font-style:italic; font-weight:300;
+  font-size:clamp(80px, 18vw, 280px);
+  line-height:.85; letter-spacing:-.05em;
+  color:rgba(251,246,238,.04);
+  text-align:center;
+  margin-top:60px;
+  font-variation-settings:"opsz" 144, "SOFT" 100;
+  user-select:none;
+}
+
+/* ───────── Reveal animations ───────── */
+.reveal{opacity:0; transform:translateY(30px); transition:opacity .9s ease, transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1; transform:translateY(0)}
+.reveal[data-d="1"]{transition-delay:.1s}
+.reveal[data-d="2"]{transition-delay:.2s}
+.reveal[data-d="3"]{transition-delay:.3s}
+.reveal[data-d="4"]{transition-delay:.4s}
+
+/* ───────── Mobile ───────── */
+@media (max-width: 980px){
+  section{padding:80px 22px}
+  .hero{padding:50px 22px 30px}
+  .hero-grid{grid-template-columns:1fr; gap:50px}
+  .hero-stage{height:380px}
+  .section-head{grid-template-columns:1fr; gap:20px; margin-bottom:48px}
+  .therapie-grid{grid-template-columns:repeat(6,1fr); gap:18px}
+  .therapie-card.span6,.therapie-card.span4,.therapie-card.span8{grid-column:span 6}
+  .praxen-grid{grid-template-columns:repeat(2,1fr)}
+  .manifest-grid{grid-template-columns:1fr; gap:50px}
+  .stats-grid{grid-template-columns:repeat(2,1fr); gap:32px}
+  .stat{border-left:0; padding-left:0; padding-top:24px; border-top:1px solid rgba(34,22,8,.18)}
+  .stat:first-child,.stat:nth-child(2){border-top:0; padding-top:0}
+  .cta-card{padding:48px 28px; border-radius:24px}
+  .cta-grid{grid-template-columns:1fr; gap:40px}
+  .foot-top{grid-template-columns:1fr 1fr; gap:40px}
+  nav.primary{display:none}
+  .menu-toggle{
+    display:grid; place-items:center;
+    width:44px; height:44px; border-radius:12px;
+    background:var(--ink); color:var(--cream);
+  }
+  .menu-toggle svg{width:18px; height:18px}
+  .ribbon-inner{justify-content:center; gap:14px; font-size:12px}
+  .ribbon-inner .hide-sm{display:none}
+}
+
+@media (max-width: 600px){
+  .hero-numeral{display:none}
+  .praxen-grid{grid-template-columns:1fr}
+  .therapie-grid{grid-template-columns:1fr; gap:14px}
+  .therapie-card.span6,.therapie-card.span4,.therapie-card.span8,.therapie-card.span12{grid-column:span 1}
+  .therapie-card{padding:28px}
+  .stats-grid{grid-template-columns:1fr}
+  .stat{border-top:1px solid rgba(34,22,8,.18) !important; padding-top:24px !important}
+  .stat:first-child{border-top:0 !important; padding-top:0 !important}
+  .foot-top{grid-template-columns:1fr; gap:36px}
+  .hero-card.c1{width:80%; height:65%}
+  .hero-card.c2{width:65%}
+  .hero-card.c3{width:auto}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important; transition-duration:.01ms !important}
+  .marquee-track{animation:none}
+  .reveal{opacity:1; transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ─────────── Top ribbon ─────────── -->
+<div class="ribbon">
+  <div class="ribbon-inner">
+    <span><span class="dot"></span> 7 Praxen in Hannover &amp; Region</span>
+    <span class="hide-sm">Mo–Fr 08:00–19:00 · Telefon 24/7</span>
+    <span><a href="tel:+4951165580773">+49 511 65580773</a></span>
+  </div>
+</div>
+
+<!-- ─────────── Header ─────────── -->
+<header class="site">
+  <div class="site-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M5 19c3-2 6-2 9 0s7 2 10 0" stroke="#fbf6ee" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="22" cy="9" r="2.2" fill="#fbf6ee"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="a">Bona Lingua</span>
+        <span class="b">Logopädie · Hannover</span>
+      </span>
+    </a>
+    <nav class="primary">
+      <a href="#therapien">Therapien</a>
+      <a href="#praxen">Praxen</a>
+      <a href="#manifest">Haltung</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="cta-pill" href="https://hannover-logopaedie.de/kontakt/" target="_blank" rel="noopener">
+      Termin vereinbaren
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="menu-toggle" aria-label="Menü">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ─────────── Hero ─────────── -->
+<section class="hero">
+  <div class="hero-numeral" style="top:-60px; right:-40px;">B</div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <span class="eyebrow reveal">Bona Lingua · seit 2005</span>
+      <h1 class="hero-title reveal" data-d="1">
+        Worte,<br>
+        die <em>ankommen.</em><br>
+        <span class="underline">Stimmen,</span><br>
+        die tragen.
+      </h1>
+      <p class="lede reveal" data-d="2">
+        Sieben Logopädie-Praxen in Hannover und der Region. Therapie für Kinder, Jugendliche und Erwachsene — fundiert, herzlich, alltagsnah. Bei Aussprache, Stimme, Sprache, Schlucken oder nach neurologischen Ereignissen.
+      </p>
+      <div class="hero-actions reveal" data-d="3">
+        <a class="btn btn-primary" href="https://hannover-logopaedie.de/kontakt/" target="_blank" rel="noopener">
+          Termin vereinbaren
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="https://hannover-logopaedie.de/" target="_blank" rel="noopener">Zur Hauptseite</a>
+      </div>
+    </div>
+
+    <div class="hero-stage reveal" data-d="2" aria-hidden="true">
+      <!-- Card 1 — speech wave -->
+      <div class="hero-card c1">
+        <div class="speech">
+          <svg viewBox="0 0 240 160" fill="none">
+            <path d="M10 80 Q 30 30 50 80 T 90 80 T 130 80 T 170 80 T 210 80 T 250 80"
+                  stroke="#fbf6ee" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M10 80 Q 30 130 50 80 T 90 80 T 130 80 T 170 80 T 210 80 T 250 80"
+                  stroke="#fbf6ee" stroke-width="3.5" stroke-linecap="round" opacity=".5"/>
+            <circle cx="195" cy="40" r="6" fill="#fbf6ee"/>
+            <circle cx="215" cy="55" r="3" fill="#fbf6ee" opacity=".7"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Card 2 — quote -->
+      <div class="hero-card c2">
+        <span class="qmark">&ldquo;</span>
+        <div>
+          <p class="quote-text" style="margin:0 0 16px">Sprache ist nicht nur Werkzeug — sie ist Identität, Beziehung, Welt.</p>
+          <span class="quote-attr">— Praxis-Philosophie</span>
+        </div>
+      </div>
+
+      <!-- Card 3 — pill -->
+      <div class="hero-card c3">
+        <span class="pulse"></span>
+        Termine kurzfristig verfügbar
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Marquee ─────────── -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Stimme</span>
+    <span class="marquee-item">Sprache</span>
+    <span class="marquee-item">Sprechen</span>
+    <span class="marquee-item">Schlucken</span>
+    <span class="marquee-item">Hören</span>
+    <span class="marquee-item">Lesen</span>
+    <span class="marquee-item">Schreiben</span>
+    <span class="marquee-item">Stimme</span>
+    <span class="marquee-item">Sprache</span>
+    <span class="marquee-item">Sprechen</span>
+    <span class="marquee-item">Schlucken</span>
+    <span class="marquee-item">Hören</span>
+    <span class="marquee-item">Lesen</span>
+    <span class="marquee-item">Schreiben</span>
+  </div>
+</div>
+
+<!-- ─────────── Therapien ─────────── -->
+<section class="therapien" id="therapien">
+  <div class="container">
+    <div class="section-head">
+      <span class="label reveal">01 — Therapien</span>
+      <h2 class="reveal" data-d="1">Behandlungsfelder, die <em>greifen</em> — vom ersten Wort bis zum letzten Satz.</h2>
+    </div>
+
+    <div class="therapie-grid">
+
+      <article class="therapie-card span6 reveal" data-d="1">
+        <span class="num">i.</span>
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21s-7-4.5-7-11a5 5 0 019-3 5 5 0 019 3c0 6.5-7 11-7 11h-4z" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Therapie für <em>Kinder</em> &amp; Jugendliche</h3>
+        <p>Aussprache, Wortschatz, Grammatik, Lese-Rechtschreib-Schwäche, Stottern, Poltern, myofunktionelle Störungen. Spielerisch, individuell, mit Eltern an Bord.</p>
+        <div class="tags">
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/artikulationsstoerungen-dyslalie/" target="_blank" rel="noopener">Aussprache</a>
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/kindliches-stottern/" target="_blank" rel="noopener">Stottern</a>
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/sprachentwicklungsstoerungen/" target="_blank" rel="noopener">SES &amp; LRS</a>
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/late-talker/" target="_blank" rel="noopener">Late Talker</a>
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/myofunktionelle-stoerung-mfs-orofaziale-dysfunktionen/" target="_blank" rel="noopener">Myofunktion</a>
+        </div>
+        <a class="more" href="https://hannover-logopaedie.de/kinder/" target="_blank" rel="noopener">
+          Alle Kinder-Therapien
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="therapie-card span6 feature reveal" data-d="2">
+        <span class="num">ii.</span>
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v18M5 8h14M5 16h14" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Stimme — wieder <em>tragfähig</em>, wieder Sie</h3>
+        <p>Funktionelle und organische Stimmstörungen, Heiserkeit, Belastungs­problematiken bei Lehrer:innen, Sänger:innen, Coaches. Atem, Resonanz, Haltung.</p>
+        <div class="tags">
+          <a class="tag" href="https://hannover-logopaedie.de/habe-ich-eine-stimmstoerung/" target="_blank" rel="noopener">Heiserkeit-Check</a>
+          <a class="tag" href="https://hannover-logopaedie.de/erwachsene/funktionelle-dysphonie-stimmstoerungen/" target="_blank" rel="noopener">Sprechberufe</a>
+          <a class="tag" href="https://hannover-logopaedie.de/atemtherapie/" target="_blank" rel="noopener">Atemtherapie</a>
+          <a class="tag" href="https://hannover-logopaedie.de/erwachsene/organische-stimmstoerungen-dysphonien/" target="_blank" rel="noopener">Organisch</a>
+          <a class="tag" href="https://hannover-logopaedie.de/erwachsene/stimmtherapie-fuer-transgender-transsexuell-transident/" target="_blank" rel="noopener">Trans-Stimme</a>
+        </div>
+        <a class="more" href="https://hannover-logopaedie.de/erwachsene/dysphonie-stimmstoerung/" target="_blank" rel="noopener">
+          Stimmtherapie ansehen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="therapie-card span4 reveal" data-d="1">
+        <span class="num">iii.</span>
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Aphasie &amp; <em>Neurologie</em></h3>
+        <p>Nach Schlaganfall, Schädel-Hirn-Trauma oder bei Demenz. Wortfindung, Satzbau, Lesen, Schreiben — alltagsorientiert.</p>
+        <div class="tags">
+          <a class="tag" href="https://hannover-logopaedie.de/erwachsene/aphasie/" target="_blank" rel="noopener">Aphasie</a>
+          <a class="tag" href="https://hannover-logopaedie.de/erwachsene/dysarthrie/" target="_blank" rel="noopener">Dysarthrie</a>
+          <a class="tag" href="https://hannover-logopaedie.de/die-logopaedische-therapie-von-demenz-und-alzheimer/" target="_blank" rel="noopener">Demenz</a>
+          <a class="tag" href="https://hannover-logopaedie.de/lsvt-loud-lee-silverman-voice-treatment/" target="_blank" rel="noopener">LSVT LOUD</a>
+        </div>
+        <a class="more" href="https://hannover-logopaedie.de/aphasie-therapeuten/" target="_blank" rel="noopener">
+          Spezialist:innen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="therapie-card span4 reveal" data-d="2">
+        <span class="num">iv.</span>
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 12c4-4 12-4 16 0M7 16c2.5-2.5 7.5-2.5 10 0" stroke-linecap="round"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>
+        </div>
+        <h3>Schlucken — <em>Dysphagie</em></h3>
+        <p>Diagnostik und Therapie bei Schluckstörungen jeden Alters. Sicher essen, sicher trinken, Lebensqualität zurückgewinnen.</p>
+        <div class="tags">
+          <a class="tag" href="https://hannover-logopaedie.de/erwachsene/dysphagie-schluckstoerungen/" target="_blank" rel="noopener">Erwachsene</a>
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/kindliche-dysphagie-ess-fuetter-schluckstoerungen/" target="_blank" rel="noopener">Kinder</a>
+          <a class="tag" href="https://hannover-logopaedie.de/dysphagie-fachtherapeut/" target="_blank" rel="noopener">Fachtherapeut</a>
+        </div>
+        <a class="more" href="https://hannover-logopaedie.de/dysphagie-therapeuten/" target="_blank" rel="noopener">
+          Therapeut:innen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="therapie-card span4 reveal" data-d="3">
+        <span class="num">v.</span>
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l4 4-4 4M21 9l-4 4 4 4M9 5l6 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Redeflussst&ouml;rungen</h3>
+        <p>Stottern und Poltern bei Kindern und Erwachsenen. Wir kombinieren bewährte Methoden mit modernen, evidenzbasierten Ansätzen.</p>
+        <div class="tags">
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/kindliches-stottern/" target="_blank" rel="noopener">Stottern Kinder</a>
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/poltern/" target="_blank" rel="noopener">Poltern</a>
+          <a class="tag" href="https://hannover-logopaedie.de/lexikon/stottern/" target="_blank" rel="noopener">Lexikon</a>
+        </div>
+        <a class="more" href="https://hannover-logopaedie.de/kindliches-stottern-therapeuten/" target="_blank" rel="noopener">
+          Therapeut:innen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="therapie-card span12 reveal" data-d="1">
+        <span class="num">vi.</span>
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h6l2-7 4 14 2-7h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Diagnostik, Beratung &amp; <em>Service</em> — der erste Schritt zählt.</h3>
+        <p style="max-width:720px">Ohne saubere Diagnostik keine wirksame Therapie. Wir nehmen uns Zeit, beobachten, testen, hören zu — bei Kindern wie bei Erwachsenen. Sie erhalten eine ehrliche Einschätzung und einen klaren Plan. Wenn ein anderer Weg sinnvoller ist, sagen wir das auch.</p>
+        <div class="tags">
+          <a class="tag" href="https://hannover-logopaedie.de/kinder/sprachentwicklungstest/" target="_blank" rel="noopener">Sprach­entwicklungstest</a>
+          <a class="tag" href="https://hannover-logopaedie.de/heilmittelkatalog/" target="_blank" rel="noopener">Heilmittelkatalog</a>
+          <a class="tag" href="https://hannover-logopaedie.de/logopaedie-erhalten/" target="_blank" rel="noopener">Wie zur Therapie kommen</a>
+          <a class="tag" href="https://hannover-logopaedie.de/hausbesuche/" target="_blank" rel="noopener">Hausbesuche</a>
+          <a class="tag" href="https://hannover-logopaedie.de/informationen-fuer-aerzte/" target="_blank" rel="noopener">Für Ärzt:innen</a>
+          <a class="tag" href="https://hannover-logopaedie.de/informationen-fuer-pflegeeinrichtungen-und-krankenhaeuser/" target="_blank" rel="noopener">Für Pflege &amp; Klinik</a>
+          <a class="tag" href="https://hannover-logopaedie.de/mehrsprachigkeit/" target="_blank" rel="noopener">Mehrsprachigkeit</a>
+        </div>
+        <div style="display:flex; gap:24px; flex-wrap:wrap; margin-top:6px">
+          <a class="more" href="https://hannover-logopaedie.de/kinder/" target="_blank" rel="noopener">
+            Therapien für Kinder
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg>
+          </a>
+          <a class="more" href="https://hannover-logopaedie.de/erwachsene/" target="_blank" rel="noopener">
+            Therapien für Erwachsene
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Praxen ─────────── -->
+<section class="praxen" id="praxen">
+  <div class="container">
+    <div class="section-head">
+      <span class="label reveal">02 — Standorte</span>
+      <h2 class="reveal" data-d="1">Sieben Praxen, eine <em>Haltung</em> — wohnortnahe Therapie in Hannover und Umgebung.</h2>
+    </div>
+
+    <div class="praxen-grid">
+
+      <article class="praxis reveal" data-d="1">
+        <span class="praxis-num">01</span>
+        <h3>List</h3>
+        <span class="city">Hannover · 30161</span>
+        <p class="addr"><strong>Lister Meile 85a</strong><br>30161 Hannover</p>
+        <div class="links">
+          <a class="lnk primary" href="https://hannover-logopaedie.de/logopaedie-praxis-in-hannover-list/" target="_blank" rel="noopener">Praxis ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg></a>
+          <a class="lnk" href="https://hannover-logopaedie.de/team-list/" target="_blank" rel="noopener">Team</a>
+          <a class="lnk" href="https://hannover-logopaedie.de/logopaedie-praxis-in-hannover-list/therapie-bewertungen-list/" target="_blank" rel="noopener">Bewertungen</a>
+         
+        </div>
+      </article>
+
+      <article class="praxis reveal" data-d="2">
+        <span class="praxis-num">02</span>
+        <h3>Kleefeld</h3>
+        <span class="city">Hannover · 30625</span>
+        <p class="addr"><strong>Scheidestraße 21a</strong><br>30625 Hannover</p>
+        <div class="links">
+          <a class="lnk primary" href="https://hannover-logopaedie.de/logopaedie-praxis-kleefeld/" target="_blank" rel="noopener">Praxis ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg></a>
+          <a class="lnk" href="https://hannover-logopaedie.de/team-kleefeld/" target="_blank" rel="noopener">Team</a>
+          <a class="lnk" href="https://hannover-logopaedie.de/logopaedie-praxis-kleefeld/therapie-bewertungen-kleefeld/" target="_blank" rel="noopener">Bewertungen</a>
+          
+        </div>
+      </article>
+
+      <article class="praxis reveal" data-d="3">
+        <span class="praxis-num">03</span>
+        <h3>Hainholz</h3>
+        <span class="city">Hannover · 30165</span>
+        <p class="addr"><strong>Bömelburgsstraße 35</strong><br>30165 Hannover</p>
+        <div class="links">
+          <a class="lnk primary" href="https://hannover-logopaedie.de/praxis-hainholz/" target="_blank" rel="noopener">Praxis ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg></a>
+          <a class="lnk" href="https://hannover-logopaedie.de/logopaeden-hainholz/" target="_blank" rel="noopener">Team</a>
+          <a class="lnk" href="https://hannover-logopaedie.de/praxis-hainholz/therapieuebersicht-bewertungen-hainholz/" target="_blank" rel="noopener">Bewertungen</a>
+          
+        </div>
+      </article>
+
+      <article class="praxis reveal" data-d="1">
+        <span class="praxis-num">04</span>
+        <h3>Bothfeld</h3>
+        <span class="city">Hannover · 30659</span>
+        <p class="addr"><strong>Sutelstraße 10</strong> (2. OG)<br>30659 Hannover</p>
+        <div class="links">
+          <a class="lnk primary" href="https://hannover-logopaedie.de/logopaedie-praxis-bothfeld/" target="_blank" rel="noopener">Praxis ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg></a>
+          <a class="lnk" href="https://hannover-logopaedie.de/team-bothfeld/" target="_blank" rel="noopener">Team</a>
+          <a class="lnk" href="https://hannover-logopaedie.de/logopaedie-praxis-bothfeld/therapie-bewertungen-bothfeld/" target="_blank" rel="noopener">Bewertungen</a>
+          
+        </div>
+      </article>
+
+      <article class="praxis reveal" data-d="2">
+        <span class="praxis-num">05</span>
+        <h3>Burgdorf</h3>
+        <span class="city">Burgdorf · 31303</span>
+        <p class="addr"><strong>Weserstraße 6</strong><br>31303 Burgdorf (Weststadt)</p>
+        <div class="links">
+          <a class="lnk primary" href="https://hannover-logopaedie.de/logopaedie-praxis-burgdorf/" target="_blank" rel="noopener">Praxis ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg></a>
+          <a class="lnk" href="https://hannover-logopaedie.de/team-burgdorf/" target="_blank" rel="noopener">Team</a>
+          <a class="lnk" href="https://hannover-logopaedie.de/logopaedie-praxis-burgdorf/therapie-bewertungen-burgdorf/" target="_blank" rel="noopener">Bewertungen</a>
+          
+        </div>
+      </article>
+
+      <article class="praxis reveal" data-d="3">
+        <span class="praxis-num">06</span>
+        <h3>Langenhagen</h3>
+        <span class="city">Langenhagen · 30851</span>
+        <p class="addr"><strong>Walsroder Straße 47a</strong><br>30851 Langenhagen</p>
+        <div class="links">
+          <a class="lnk primary" href="https://hannover-logopaedie.de/logopaedie-praxis-langenhagen/" target="_blank" rel="noopener">Praxis ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg></a>
+          <a class="lnk" href="https://hannover-logopaedie.de/logopaeden-team-langenhagen/" target="_blank" rel="noopener">Team</a>
+          <a class="lnk" href="https://hannover-logopaedie.de/logopaedie-praxis-langenhagen/therapieuebersicht-bewertungen-langenhagen/" target="_blank" rel="noopener">Bewertungen</a>
+          <a class="lnk" href="tel:+4951165580773">Anruf</a>
+        </div>
+      </article>
+
+      <article class="praxis reveal" data-d="1" style="grid-column:span 3; display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; padding:42px;">
+        <div>
+          <span class="praxis-num" style="position:relative; top:auto; right:auto; font-size:32px; opacity:.4;">07</span>
+          <h3 style="margin-top:8px">Südstadt</h3>
+          <span class="city">Hannover · 30171</span>
+          <p class="addr" style="margin-top:18px"><strong>Stolzestraße 59</strong><br>30171 Hannover</p>
+          <div class="links" style="border-top:0; padding-top:0">
+            <a class="lnk primary" href="https://hannover-logopaedie.de/logopaedie-suedstadt/" target="_blank" rel="noopener">Praxis ansehen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round"/></svg></a>
+            <a class="lnk" href="https://hannover-logopaedie.de/logopaedie-suedstadt/team-suedstadt/" target="_blank" rel="noopener">Team</a>
+            <a class="lnk" href="https://hannover-logopaedie.de/logopaedie-suedstadt/therapie-bewertungen-suedstadt/" target="_blank" rel="noopener">Bewertungen</a>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <p style="font-family:var(--display); font-style:italic; font-weight:300; font-size:clamp(28px,3vw,42px); line-height:1.1; letter-spacing:-.02em; color:var(--ink); margin:0; font-variation-settings:'opsz' 144,'SOFT' 100;">
+            Zentral &amp; ruhig — direkt am Maschsee­quartier.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Manifest ─────────── -->
+<section class="manifest" id="manifest">
+  <div class="container">
+    <div class="manifest-grid">
+      <div class="reveal">
+        <span class="label">03 — Haltung</span>
+        <h2 style="margin-top:36px">Wir behandeln <em>Menschen</em>,<br>nicht Symptome.</h2>
+        <p class="body">Logopädie ist Beziehungsarbeit. Sprache, Stimme und Schlucken sind eng mit Identität, Biografie und Alltag verwoben. Bei uns finden Sie ein Team, das sich Zeit nimmt — fachlich solide, menschlich wach.</p>
+        <p class="body">Seit zwei Jahrzehnten arbeiten wir nach einem klaren Prinzip: <em style="color:var(--orange); font-style:italic; font-family:var(--display); font-weight:400; font-variation-settings:'opsz' 60,'SOFT' 100;">verstehen, bevor wir behandeln</em>. Das macht den Unterschied.</p>
+      </div>
+
+      <div class="values reveal" data-d="2">
+        <div class="value">
+          <span class="value-num">i.</span>
+          <div class="value-content">
+            <h4>Evidenz mit Wärme.</h4>
+            <p>Wissenschaftlich fundierte Methoden, kombiniert mit echter Zuwendung. Therapie funktioniert, wenn sie sich richtig anfühlt.</p>
+          </div>
+        </div>
+        <div class="value">
+          <span class="value-num">ii.</span>
+          <div class="value-content">
+            <h4>Ehrliche Diagnostik.</h4>
+            <p>Wir sagen, was wir sehen. Auch wenn das heißt: keine Therapie nötig, oder andere Fachrichtung sinnvoller. Vertrauen entsteht aus Klarheit.</p>
+          </div>
+        </div>
+        <div class="value">
+          <span class="value-num">iii.</span>
+          <div class="value-content">
+            <h4>Alltag im Zentrum.</h4>
+            <p>Was im Therapieraum gelingt, muss draußen tragen. Wir arbeiten mit Eltern, Lehrkräften, Pflegenden — dort, wo Sprache lebt.</p>
+          </div>
+        </div>
+        <div class="value">
+          <span class="value-num">iv.</span>
+          <div class="value-content">
+            <h4>Wohnortnah.</h4>
+            <p>Sieben Standorte zwischen Burgdorf, Langenhagen und Südstadt — damit Therapie zum Leben passt und nicht umgekehrt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── Stats ─────────── -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat reveal">
+      <div class="n"><em>VII</em></div>
+      <div class="l">Praxen in Hannover &amp; Region</div>
+    </div>
+    <div class="stat reveal" data-d="1">
+      <div class="n">20<em>+</em></div>
+      <div class="l">Jahre Erfahrung in Logopädie</div>
+    </div>
+    <div class="stat reveal" data-d="2">
+      <div class="n">11<em>h</em></div>
+      <div class="l">Sprechzeiten täglich, 24/7 telefonisch</div>
+    </div>
+    <div class="stat reveal" data-d="3">
+      <div class="n">100<em>%</em></div>
+      <div class="l">Kassen­zulassung &amp; Privat</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CTA ─────────── -->
+<section class="cta" id="kontakt">
+  <div class="cta-card">
+    <div class="cta-grid">
+      <div class="reveal">
+        <span class="label" style="display:flex; align-items:center; gap:14px; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--orange-deep); margin-bottom:32px;">
+          <span style="width:26px; height:1px; background:var(--orange-deep);"></span>
+          04 — Kontakt
+        </span>
+        <h2>Lassen Sie uns <em>sprechen.</em></h2>
+        <p>Ein erstes Gespräch ist unverbindlich — und meist klärt es schon viel. Rufen Sie uns an, schreiben Sie uns, oder buchen Sie direkt online über das Kontaktformular.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="tel:+4951165580773">
+            Jetzt anrufen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://hannover-logopaedie.de/kontakt/" target="_blank" rel="noopener">
+            Online-Kontaktformular
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-contact reveal" data-d="2">
+        <a class="contact-item" href="tel:+4951165580773">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <div>
+            <div class="meta">Telefon · 24/7</div>
+            <div class="val">+49 511 65580773</div>
+          </div>
+        </a>
+        <a class="contact-item" href="mailto:anmeldung@bona-lingua.de">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <div>
+            <div class="meta">E-Mail · zentrale Anmeldung</div>
+            <div class="val">anmeldung@bona-lingua.de</div>
+          </div>
+        </a>
+        <a class="contact-item" href="https://hannover-logopaedie.de/hausbesuche/" target="_blank" rel="noopener">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h12a1 1 0 001-1V10"/></svg>
+          </span>
+          <div>
+            <div class="meta">Service · Hausbesuche</div>
+            <div class="val">Wenn der Weg zu weit ist</div>
+          </div>
+        </a>
+        <a class="contact-item" href="https://hannover-logopaedie.de" target="_blank" rel="noopener">
+          <span class="ic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          </span>
+          <div>
+            <div class="meta">Hauptseite</div>
+            <div class="val">hannover-logopaedie.de</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────── Footer ─────────── -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M5 19c3-2 6-2 9 0s7 2 10 0" stroke="#fbf6ee" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="22" cy="9" r="2.2" fill="#fbf6ee"/>
+          </svg>
+        </span>
+        <p>Bona Lingua GmbH — Logopädie für Hannover und Region. Sieben Praxen, ein Anspruch: Sprache, die ankommt.</p>
+      </div>
+
+      <div class="foot-col">
+        <h5>Therapien</h5>
+        <ul>
+          <li><a href="https://hannover-logopaedie.de/kinder/" target="_blank" rel="noopener">Kinder &amp; Jugendliche</a></li>
+          <li><a href="https://hannover-logopaedie.de/erwachsene/" target="_blank" rel="noopener">Erwachsene</a></li>
+          <li><a href="https://hannover-logopaedie.de/erwachsene/dysphonie-stimmstoerung/" target="_blank" rel="noopener">Stimmtherapie</a></li>
+          <li><a href="https://hannover-logopaedie.de/erwachsene/aphasie/" target="_blank" rel="noopener">Aphasie</a></li>
+          <li><a href="https://hannover-logopaedie.de/erwachsene/dysphagie-schluckstoerungen/" target="_blank" rel="noopener">Schlucken / Dysphagie</a></li>
+          <li><a href="https://hannover-logopaedie.de/kinder/kindliches-stottern/" target="_blank" rel="noopener">Stottern</a></li>
+          <li><a href="https://hannover-logopaedie.de/lexikon/" target="_blank" rel="noopener">Lexikon A–Z</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h5>Standorte</h5>
+        <ul>
+          <li><a href="https://hannover-logopaedie.de/logopaedie-praxis-in-hannover-list/" target="_blank" rel="noopener">Hannover · List</a></li>
+          <li><a href="https://hannover-logopaedie.de/logopaedie-praxis-kleefeld/" target="_blank" rel="noopener">Hannover · Kleefeld</a></li>
+          <li><a href="https://hannover-logopaedie.de/praxis-hainholz/" target="_blank" rel="noopener">Hannover · Hainholz</a></li>
+          <li><a href="https://hannover-logopaedie.de/logopaedie-praxis-bothfeld/" target="_blank" rel="noopener">Hannover · Bothfeld</a></li>
+          <li><a href="https://hannover-logopaedie.de/logopaedie-suedstadt/" target="_blank" rel="noopener">Hannover · Südstadt</a></li>
+          <li><a href="https://hannover-logopaedie.de/logopaedie-praxis-burgdorf/" target="_blank" rel="noopener">Burgdorf</a></li>
+          <li><a href="https://hannover-logopaedie.de/logopaedie-praxis-langenhagen/" target="_blank" rel="noopener">Langenhagen</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h5>Service &amp; Kontakt</h5>
+        <ul>
+          <li><a href="https://hannover-logopaedie.de/kontakt/" target="_blank" rel="noopener">Termin / Kontakt</a></li>
+          <li><a href="https://hannover-logopaedie.de/hausbesuche/" target="_blank" rel="noopener">Hausbesuche</a></li>
+          <li><a href="https://hannover-logopaedie.de/logopaedie-erhalten/" target="_blank" rel="noopener">Wie zur Therapie?</a></li>
+          <li><a href="https://hannover-logopaedie.de/heilmittelkatalog/" target="_blank" rel="noopener">Heilmittelkatalog</a></li>
+          <li><a href="https://hannover-logopaedie.de/informationen-fuer-aerzte/" target="_blank" rel="noopener">Für Ärzt:innen</a></li>
+          <li><a href="https://hannover-logopaedie.de/aktuelles/" target="_blank" rel="noopener">Aktuelles</a></li>
+          <li><a href="tel:+4951165580773">+49 511 65580773</a></li>
+          <li><a href="mailto:anmeldung@bona-lingua.de">anmeldung@bona-lingua.de</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <div class="copy">© <span id="year"></span> Bona Lingua GmbH · Alle Rechte vorbehalten</div>
+      <div class="legal">
+        <a href="https://hannover-logopaedie.de/impressum/" target="_blank" rel="noopener">Impressum</a>
+        <a href="https://hannover-logopaedie.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a>
+      </div>
+    </div>
+
+   
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Smooth scroll offset for sticky header
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        const t = document.querySelector(id);
+        if (t) {
+          e.preventDefault();
+          const y = t.getBoundingClientRect().top + window.scrollY - 70;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  // Tilt-on-mouse for hero stage
+  const stage = document.querySelector('.hero-stage');
+  if (stage && window.matchMedia('(min-width: 980px)').matches){
+    stage.addEventListener('mousemove', (e) => {
+      const r = stage.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      stage.querySelectorAll('.hero-card').forEach((c, i) => {
+        const depth = (i + 1) * 6;
+        c.style.transform = `translate(${x * depth}px, ${y * depth}px) rotate(${i === 0 ? -2.5 : i === 1 ? 2 : -3}deg)`;
+      });
+    });
+    stage.addEventListener('mouseleave', () => {
+      stage.querySelectorAll('.hero-card').forEach((c, i) => {
+        c.style.transform = `rotate(${i === 0 ? -2.5 : i === 1 ? 2 : -3}deg)`;
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
